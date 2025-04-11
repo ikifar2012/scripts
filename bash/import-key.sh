@@ -14,7 +14,7 @@ GITHUB_API_URL="https://api.github.com/users/$GITHUB_USER/keys"
 
 # Get the current user's home .ssh directory
 USER=$(whoami)
-USER_SSH_DIR="/$HOME/.ssh"
+USER_SSH_DIR="$HOME/.ssh"
 
 # Ensure the .ssh directory exists
 if [ ! -d "$USER_SSH_DIR" ]; then
